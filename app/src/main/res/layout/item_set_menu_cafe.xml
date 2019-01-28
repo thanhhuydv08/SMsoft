@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="110dp"
+    android:id="@+id/layout_item_set_menu_cafe"
+    android:background="@drawable/shape_button_3d_slow"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/img_image_product"
+        android:layout_width="90dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_height="90dp"
+        android:background="@drawable/fresh_orange_large_65k" />
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_gravity="center"
+        android:id="@+id/txtv_name_product"
+        android:text="Nước cam "
+        android:textSize="10dp"
+        android:textColor="@color/Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/Black"
+        android:layout_gravity="center"
+        android:id="@+id/txtv_price_product"
+        android:text="39000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

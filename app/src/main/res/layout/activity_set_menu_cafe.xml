@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetMenuCafeActivity">
+<LinearLayout
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_button_3d"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textColor="@color/md_black_1000"
+            android:id="@+id/txtv_displaytext"
+            android:text="Bàn Số : "
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/txtv_displaytext"
+            android:id="@+id/txtv_id_Table"
+            android:textSize="20dp"
+            android:textColor="@color/md_black_1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/layout_menu"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ic_menu_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="Menu"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/icon_click"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_memu_show_hide_product"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/Milk_White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/Red"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:text="Note: Vui lòng click ảnh dưới để chọn thực đơn, click title Menu để show or hide thực đơn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcl_setmenu_menu"
+                    android:background="@color/White"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <!--layout cho hien thi danh sach cac loai thuc uonh da set-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/ll_view_list_selectted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_menu_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/Black"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="Danh sách thực đơn đang chọn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/icon_click"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_show_hide_list_selectted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:background="@color/Black"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="STT"
+                            android:textColor="@color/White" />
+                        <TextView
+                            android:layout_width="205dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:text="Tên thực đơn "
+                            android:textColor="@color/White" />
+                        <TextView
+                            android:textColor="@color/White"
+                            android:layout_weight="2"
+                            android:text="Sl"
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textColor="@color/White"
+                            android:layout_weight="2"
+                            android:text="Giá"
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textColor="@color/White"
+                            android:layout_weight="2"
+                            android:text="Xóa"
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rcl_preview_list_selectted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:background="@drawable/btn_solic_corner_green"
+                            android:id="@+id/btn_show_hide_xacNhan"
+                            android:layout_weight="1"
+                            android:text="Xác Nhận "
+                            android:textColor="@color/White"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <Button
+                            android:id="@+id/btn_show_hide_huy"
+                            android:layout_weight="1"
+                            android:text="Hủy"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/btn_solic_corner_green"
+                            android:textColor="@color/White"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_infor_bill"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ic_menu_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="Thông tin hóa đơn"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/icon_click"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_show_hide_thongtinhoadon"
+                android:orientation="vertical"
+               android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/Black"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="STT"
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="Tên thực đơn "
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:textColor="@color/White"
+                        android:layout_weight="2"
+                        android:text="Sl"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/White"
+                        android:layout_weight="2"
+                        android:text="Giá"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/White"
+                        android:layout_weight="3"
+                        android:text="Status"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                    <android.support.v7.widget.RecyclerView
+                        android:background="@color/White"
+                        android:id="@+id/rcl_Bill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:paddingTop="3dp"
+                        android:id="@+id/btn_thanhtoan"
+                        android:layout_width="120dp"
+                        android:textColor="@color/White"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_solic_corner_green"
+                        android:text="Thanh Toán" />
+
+                    <Button
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/btn_Huy"
+                        android:layout_width="120dp"
+                        android:paddingTop="3dp"
+                        android:textColor="@color/White"
+                        android:background="@drawable/btn_solic_corner_green"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="Hủy" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+</LinearLayout>

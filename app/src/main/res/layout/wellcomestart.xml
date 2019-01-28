@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_wellcomestart"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:background="@drawable/bg_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+    </ImageView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Hi everybody !"
+                android:textColor="@color/Milk_White" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/shape_button_3d">
+
+                <TextView
+                    android:id="@+id/txtv_display_activate"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Activate your WebAndroid by Acount Facebook !"
+                    android:textColor="@color/md_black_1000" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/image_bg_main_1" />
+
+                <Button
+                    android:id="@+id/btn_connect_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txtv_display_activate"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_solic_corner_green"
+                    android:text="Activate"
+                    android:textColor="@color/White" />
+            </RelativeLayout>
+
+            <TextView
+                android:background="@drawable/btn_solic_corner_green_yellow"
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Ứng Dụng"
+                android:textColor="@color/White"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Can you choice all three services below ! "
+                android:textSize="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/lnl_createcoffee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_3d_slow"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_pic_cafe" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Cafe"
+                        android:textColor="@color/md_black_1000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnl_createshop"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_button_3d_slow"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_pic_shop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Shop"
+                        android:textColor="@color/md_black_1000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnl_createsales"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_3d_slow"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_pic_sales" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Sales"
+                        android:textColor="@color/md_black_1000" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:background="@drawable/btn_solic_corner_green_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Tin Tức Kinh Doanh hôm nay"
+                android:textColor="@color/White"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đầu tư - Lợi Nhuận - Tài chính - Công nghệ số.....!  "
+                android:textSize="10dp" />
+ <!--test ko dung recyclerview-->
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+                <TextView
+                    android:id="@+id/item_news_business_info_title"
+                    android:text="Ngành nào thu hút nhân sự nhất năm 2019"
+                    android:textSize="15dp"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:background="@mipmap/img1"
+                    android:layout_below="@id/item_news_business_info_title"
+                    android:id="@+id/item_news_business_image"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:text="Bất động sản và xây dựng, công nghệ thông tin đang là những ngành....."
+                    android:layout_below="@id/item_news_business_info_title"
+                    android:id="@+id/item_news_business_info_under"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="50dp"
+                    android:autoSizeTextType="uniform"
+                    android:layout_toRightOf="@+id/item_news_business_image"
+                    android:textColor="#212121" />
+                <TextView
+                    android:text="* Tâm lý chờ nhận thưởng Tết khiến doanh nghiệp khó tuyển lao động / Nhân sự du lịch Việt Nam năng suất chưa bằng một nửa Thái Lan."
+                    android:layout_marginLeft="5dp"
+                    android:textSize="10dp"
+                    android:textColor="#757575"
+                    android:autoSizeTextType="uniform"
+                    android:layout_below="@id/item_news_business_info_under"
+                    android:id="@+id/item_news_business_info_order"
+                    android:layout_toRightOf="@+id/item_news_business_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+                <TextView
+                    android:id="@+id/item_news_business_info_title1"
+                    android:text="TP HCM có thêm một trung tâm thương mại kiểu mới"
+                    android:textSize="15dp"
+                    android:textColor="#212121"
+                    android:autoSizeTextType="uniform"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+                <ImageView
+                    android:background="@mipmap/img2"
+                    android:layout_below="@id/item_news_business_info_title1"
+                    android:id="@+id/item_news_business_image1"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:text="Gigamal là mô hình bán lẻ kết hợp giữa trải nghiệm mua sắm và......."
+                    android:layout_below="@id/item_news_business_info_title1"
+                    android:id="@+id/item_news_business_info_under1"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="50dp"
+                    android:autoSizeTextType="uniform"
+                    android:layout_toRightOf="@+id/item_news_business_image1"
+                    android:textColor="#212121" />
+                <TextView
+                    android:text="* Khu đô thị do Him Lam phát triển hưởng lợi từ  trục hành lang cao tốc và trục phát triển Hà Nội, hứa hẹn tăng giá trị theo thời gian."
+                    android:layout_marginLeft="5dp"
+                    android:textSize="10dp"
+                    android:textColor="#757575"
+                    android:autoSizeTextType="uniform"
+                    android:layout_below="@id/item_news_business_info_under1"
+                    android:id="@+id/item_news_business_info_order1"
+                    android:layout_toRightOf="@+id/item_news_business_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcl_news_business"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+
+    <!--buoc tiep la do thong tin báo chí vè kinh doanh 24h xuống dưới này-->
+    <!--&#45;&#45; dimens lại giá trị và các biến , cũng như drawble-->

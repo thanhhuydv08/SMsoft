@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">SMsoft </string>
+    <string name="title_acitvity_insertStaff">Thêm Nhân Viên </string>
+    <string name="title_acivity_createcafe">Quản lý Coffee </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_cafe"> CreateCafeActivity</string>
+    <string name="text_inserttable_activity_createcafe">Vui lòng nhập số bàn và nhấn nút Đồng ý : </string>
+    <string name="text_removetable_activity_createcafe">Vui lòng nhập id bàn cần xóa và nhấn nút Đồng ý:</string>
+    <string name="title_activity_setmenucafe">Thông tin Bàn </string>
+    <string name="title_activity_insert_thuc_don">InsertThucDonActivity</string>
+    <string name="title_activity_coming_soon">ComingSoonActivity</string>
+    <string name="title_activity_history_payment">HistoryPaymentActivity</string>
+
+
+</resources>

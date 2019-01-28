@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="130dp">
+  <TextView
+      android:id="@+id/item_news_business_info_title"
+      android:text="Ngành nào thu hút nhân sự nhất năm 2019"
+      android:textSize="18dp"
+      android:textColor="#212121"
+      android:textStyle="bold"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+<ImageView
+android:layout_below="@id/item_news_business_info_title"
+    android:id="@+id/item_news_business_image"
+    android:layout_width="120dp"
+    android:layout_height="100dp" />
+
+  <TextView
+      android:text="Bất động sản và xây dựng, công nghệ thông tin đang là những ngành có nhu cầu tuyển dụng tăng ở mức 2 con số trong 2019."
+      android:layout_below="@id/item_news_business_info_title"
+      android:id="@+id/item_news_business_info_under"
+      android:layout_width="match_parent"
+      android:layout_marginLeft="5dp"
+      android:layout_height="50dp"
+     android:autoSizeTextType="uniform"
+      android:layout_toRightOf="@+id/item_news_business_image"
+      android:textColor="#212121" />
+    <TextView
+        android:text="* Tâm lý chờ nhận thưởng Tết khiến doanh nghiệp khó tuyển lao động / Nhân sự du lịch Việt Nam năng suất chưa bằng một nửa Thái Lan."
+        android:layout_marginLeft="5dp"
+        android:textSize="10dp"
+        android:textColor="#757575"
+        android:autoSizeTextType="uniform"
+        android:layout_below="@id/item_news_business_info_under"
+        android:id="@+id/item_news_business_info_order"
+        android:layout_toRightOf="@+id/item_news_business_image"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</RelativeLayout>

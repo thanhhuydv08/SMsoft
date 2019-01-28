@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/fr_item_table"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/table_cafe" />
+    <ImageView
+        android:id="@+id/img_check_on_off"
+        android:background="@color/Metallic_Silver"
+        android:layout_width="100dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:id="@+id/txtv_id_table"
+        android:textStyle="bold"
+        android:textColor="@color/md_blue_500"
+        android:layout_gravity="center"
+        android:text=" ID Bàn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/img_check_new_data"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="9dp"
+        android:layout_gravity="right"
+        android:background="@color/Red"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+</FrameLayout>

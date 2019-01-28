@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+android:background="@drawable/bg_insert_thuc_don"
+    android:layout_height="wrap_content"
+    tools:context=".InsertThucDonActivity">
+<com.jetradarmobile.snowfall.SnowfallView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <EditText
+                android:textColor="@color/White"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:layout_marginRight="10dp"
+                android:id="@+id/edt_id_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:hint="Index code product"
+                android:textColorHint="@color/Metallic_Silver"
+                android:textStyle="italic" />
+
+            <EditText
+                android:textColor="@color/White"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/edt_name_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif"
+                android:hint="Name Product"
+                android:textColorHint="@color/Metallic_Silver"
+                android:textStyle="italic" />
+
+            <EditText
+                android:inputType="number"
+                android:textColor="@color/White"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/edt_price_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif"
+                android:hint="price product (eg : 2000 ~ 2k)"
+                android:textColorHint="@color/Metallic_Silver"
+                android:textStyle="italic" />
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/txtv_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Thêm"
+                    android:background="@color/blackberry"
+                    android:textColor="@color/White"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/txtv_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Hủy"
+                    android:textColor="@color/White"
+                    android:background="@color/blackberry"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+</LinearLayout>
+</FrameLayout>

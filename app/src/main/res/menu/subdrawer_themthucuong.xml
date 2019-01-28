@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_addDrink_back"
+        android:icon="@drawable/ic_account_circle_teal_500_24dp"
+        android:title="Go to back" />
+    <item
+    android:id="@+id/nav_addDrink_coffee"
+    android:icon="@drawable/ic_account_circle_teal_500_24dp"
+    android:title="Cà phê" />
+    <item
+    android:id="@+id/nav_addDrink_tea"
+    android:icon="@drawable/ic_exit_to_app_teal_500_24dp"
+    android:title="Trà" />
+    <item
+    android:id="@+id/nav_addDrink_dabao"
+    android:icon="@drawable/ic_exit_to_app_teal_500_24dp"
+    android:title="Đá bào" />
+    <item
+    android:id="@+id/nav_addDrink_traicay"
+    android:icon="@drawable/ic_exit_to_app_teal_500_24dp"
+    android:title="Nước trái cây" />
+</menu>

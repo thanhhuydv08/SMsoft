@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--tools:showIn="navigation_view"-->
+    <group android:checkableBehavior="single" android:id="@+id/group_1">
+        <item
+            android:orderInCategory="1"
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_teal_500_24dp"
+            android:title="Tổng Quang" />
+        <item
+            android:orderInCategory="2"
+            android:id="@+id/nav_addDrink"
+            android:icon="@drawable/ic_add_shopping_cart_teal_500_24dp"
+            android:title="Thêm Thức uống   >"/>
+        <item
+            android:orderInCategory="9"
+            android:id="@+id/nav_historyPayment"
+            android:icon="@drawable/ic_history_teal_500_24dp"
+            android:title="Lịch sử thanh toán" />
+        <item
+            android:orderInCategory="10"
+            android:id="@+id/nav_list_thucdon"
+            android:icon="@drawable/ic_store_teal_500_24dp"
+            android:title="Danh Sách Thực Đơn" />
+    </group>
+
+    <item android:title="Other" android:orderInCategory="11">
+        <menu>
+            <item
+                android:id="@+id/nav_addAcount"
+                android:icon="@drawable/ic_account_circle_teal_500_24dp"
+                android:title="Thêm tài khoản" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit_to_app_teal_500_24dp"
+                android:title="Đăng xuất" />
+        </menu>
+    </item>
+
+</menu>
+<!--<menu>-->
+
+<!--</menu>-->

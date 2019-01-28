@@ -1,0 +1,57 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">2dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--1.login xml-->
+    <!-- - layout chinh linerlayout-->
+    <dimen name="login_lo_1_mrleft">50dp</dimen>
+    <dimen name="login_lo_1_mrright">50dp</dimen>
+    <dimen name="login_lo_1_mrtop">50dp</dimen>
+    <dimen name="login_lo_1_mrbot">50dp</dimen>
+    <!-- - igm logo-->
+    <dimen name="login_img_logo_width">120dp</dimen>
+    <dimen name="login_img_logo_hight">120dp</dimen>
+    <dimen name="login_img_logo_mrtop">20dp</dimen>
+    <!-- - txtv_line-->
+    <dimen name="login_txtv_line_mrbot">50dp</dimen>
+    <dimen name="login_txtv_line_mrleft">20dp</dimen>
+    <dimen name="login_txtv_line_mrright">20dp</dimen>
+    <!-- - txtv don't-->
+    <dimen name="login_txtv_dont_mrbot">30dp</dimen>
+    <dimen name="login_txtv_dont_alpha">0.7</dimen>
+    <!-- - txtv huynt75-->
+    <dimen name="login_txtv_huynt75_alpha">0.8</dimen>
+    <!-- - linerlayout_rank1_bound_user_pass-->
+    <dimen name="login_ll_rank1_bound_user_pass_mrleft">50dp</dimen>
+    <dimen name="login_ll_rank1_bound_user_pass_mrright">50dp</dimen>
+    <dimen name="login_ll_rank1_bound_user_pass_mrtop">120dp</dimen>
+    <dimen name="login_ll_rank1_bound_user_pass_mrbot">110dp</dimen>
+    <!-- -txtv_sigin-->
+    <dimen name="login_ll_rank1_txtv_sigin_mrtop">30dp</dimen>
+    <dimen name="login_ll_rank1_txtv_sigin_textsize">20dp</dimen>
+    <!-- -linerlayout rank12 user igm edt-->
+    <dimen name="login_ll_rank12_mrtop">20dp</dimen>
+    <dimen name="login_ll_rank12_mrleft">20dp</dimen>
+    <dimen name="login_ll_rank12_mrright">20dp</dimen>
+    <dimen name="login_ll_rank12_img_width">35dp</dimen>
+    <dimen name="login_ll_rank12_igm_hight">35dp</dimen>
+    <dimen name="login_ll_rank12_edt_mrleft">5dp</dimen>
+    <dimen name="login_ll_rank12_edt_hight">40dp</dimen>
+    <!-- -linerlayout rank13 user igm edt-->
+    <dimen name="login_ll_rank13_mrtop">10dp</dimen>
+    <dimen name="login_ll_rank13_mrleft">20dp</dimen>
+    <dimen name="login_ll_rank13_mrright">20dp</dimen>
+    <dimen name="login_ll_rank13_img_width">36dp</dimen>
+    <dimen name="login_ll_rank13_igm_hight">36dp</dimen>
+    <dimen name="login_ll_rank13_edt_mrleft">5dp</dimen>
+    <dimen name="login_ll_rank13_edt_hight">40dp</dimen>
+
+
+    .......................................................
+
+
+</resources>

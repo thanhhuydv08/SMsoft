@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".CreateCafeActivity">
+
+    <!--taọ số bàn của quán-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:theme="@style/ToolBarStyle"
+        android:background="@color/md_light_blue_500"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:background="@color/md_red_800"
+                android:src="@drawable/bg_hpny_edt"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone"
+                android:id="@+id/layout_hienthi_nhapthongtin"
+                android:background="@color/blackberry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/txtv_hienthi_nhaptubanphim"
+                    android:text="Vui lòng nhập số bàn cần tạo và nhấn nút Đồng Ý : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_toRightOf="@+id/txtv_hienthi_nhaptubanphim"
+                    android:id="@+id/edt_number_table"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/btn_agree"
+                    android:gravity="center"
+                    android:layout_below="@+id/txtv_hienthi_nhaptubanphim"
+                    android:text="Đồng Ý"
+                    android:background="@color/md_cyan_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/layout_recyclerview"
+                android:background="@drawable/shape_button_3d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcl_tablecoffee"
+                    android:layout_width="wrap_content"
+                    android:background="@color/White"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/layout_doanhthu"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/shape_button_3d">
+                    <TextView
+                        android:id="@+id/txtv_hienthidoanhthu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Note : Vui lòng click chọn các id bàn tương ứng để lên thực đơn, xem danh sách người dùng đang chọn, xem hóa đơn thanh toán và tổng số tiền thanh toán. "
+                        android:textColor="@color/md_teal_500" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/txtv_doanhthu"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:layout_toRightOf="@+id/txtv_hienthidoanhthu"-->
+                        <!--android:hint="biến hiển thị tiền"-->
+                        <!--android:textColor="@color/md_red_500" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/txtv_hienthicanhbao"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/txtv_hienthidoanhthu"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:text="Cảnh báo từ hệ thống : "-->
+                        <!--android:textColor="@color/md_red_500" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/txtv_canhbao"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/txtv_hienthidoanhthu"-->
+                        <!--android:layout_toRightOf="@+id/txtv_hienthicanhbao"-->
+                        <!--android:hint="biến text xuất hiện cảnh báo"-->
+                        <!--android:textColor="@color/md_red_500" />-->
+                </RelativeLayout>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_hpny_bottom"
+                    android:layout_below="@id/layout_doanhthu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

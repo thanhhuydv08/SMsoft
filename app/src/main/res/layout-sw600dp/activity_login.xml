@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+   android:background="@drawable/bg_login_huy"
+    android:layout_height="match_parent">
+
+<!--layout blur ben trong-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="334dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/login_ll_rank1_bound_user_pass_mrleft"
+        android:layout_marginTop="@dimen/login_ll_rank1_bound_user_pass_mrtop"
+        android:layout_marginRight="@dimen/login_ll_rank1_bound_user_pass_mrright"
+        android:layout_marginBottom="@dimen/login_ll_rank1_bound_user_pass_mrbot"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtv_sigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/login_ll_rank1_txtv_sigin_mrtop"
+            android:text="SIGN IN 600"
+            android:textColor="@color/White"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_ll_rank12_mrleft"
+            android:layout_marginTop="@dimen/login_ll_rank12_mrtop"
+            android:layout_marginRight="@dimen/login_ll_rank12_mrright"
+            android:background="@drawable/layout_corner"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_account_box_black_24dp" />
+
+            <EditText
+                android:id="@+id/edt_username_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_ll_rank12_edt_mrleft"
+                android:backgroundTint="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_ll_rank13_mrleft"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/login_ll_rank13_mrright"
+            android:background="@drawable/layout_corner"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_lock_black_24dp" />
+
+            <EditText
+                android:id="@+id/edt_password_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_ll_rank13_edt_mrleft"
+                android:backgroundTint="@color/White"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp">
+
+            <FrameLayout
+                android:id="@+id/fr_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_item_layout_login_button_01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:autoSizeMaxTextSize="100dp"
+                    android:autoSizeMinTextSize="2dp"
+                    android:autoSizeTextType="uniform"
+                    android:text="Login"
+                    android:textColor="@color/Black"
+                    android:textSize="30dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fr_oval_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:alpha="0">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:src="@drawable/layout_oval" />
+
+                <ProgressBar
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <!--layout blur ben trong-->
+
+    <ImageView
+         android:id="@+id/img_top"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/login_img_logo_mrtop"
+        android:background="@drawable/logo_main" />
+    <TextView
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="@dimen/login_txtv_line_mrleft"
+        android:layout_marginRight="@dimen/login_txtv_line_mrright"
+        android:background="@drawable/line_dot_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        android:alpha="0.7"
+        android:text="Don't have a account? Please sent to Mail below!!!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="bottom|center"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Designed by huynt75 (::) thanhhuydv08@gmail.com"
+        android:alpha="0.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:alpha="0"
+        android:id="@+id/img_zoom"
+       android:layout_marginTop="120dp"
+        android:layout_gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_oval" />
+    </FrameLayout>
+</FrameLayout>
